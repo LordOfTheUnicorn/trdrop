@@ -13,7 +13,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 # OpenCV
-CPP = /usr/local/opt/llvm/bin/clang
 unix: INCLUDEPATH += ../3rdparty/opencv-4.5.2/include/ \
                      ../3rdparty/build_opencv-4.5.2/ \
                      ../3rdparty/opencv-4.5.2/modules/core/include/ \
@@ -32,8 +31,8 @@ unix: INCLUDEPATH += ../3rdparty/opencv-4.5.2/include/ \
                      ../3rdparty/opencv-4.5.2/modules/videoio/include/ \
                      ../3rdparty/opencv-4.5.2/modules/world/include/ \
                      ../3rdparty/opencv-4.5.2/modules/imgproc/include/ 
-unix: LIBS += -L/../3rdparty/build_opencv-4.5.2/lib \
-        -libopencv_calib3d.4.5.2 \
+unix: LIBS += -L../3rdparty/build_opencv-4.5.2/lib \
+        -libopencv_calib3d.dylib \
         -libopencv_core.4.5.2 \
         -libopencv_dnn.4.5.2 \
         -libopencv_features2d.4.5.2 \
