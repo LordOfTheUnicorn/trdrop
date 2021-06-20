@@ -12,8 +12,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-# OpenCV
-unix: INCLUDEPATH += ../3rdparty/opencv-4.5.2/include/ \
+# OpenC
+macx: INCLUDEPATH += ../3rdparty/opencv-4.5.2/include/ \
                      ../3rdparty/build_opencv-4.5.2/ \
                      ../3rdparty/opencv-4.5.2/modules/core/include/ \
                      ../3rdparty/opencv-4.5.2/modules/features2d/include/ \
@@ -30,23 +30,43 @@ unix: INCLUDEPATH += ../3rdparty/opencv-4.5.2/include/ \
                      ../3rdparty/opencv-4.5.2/modules/photo/include/ \
                      ../3rdparty/opencv-4.5.2/modules/videoio/include/ \
                      ../3rdparty/opencv-4.5.2/modules/world/include/ \
-                     ../3rdparty/opencv-4.5.2/modules/imgproc/include/ 
-unix: LIBS += -L../3rdparty/build_opencv-4.5.2/lib \
-        -libopencv_calib3d.dylib \
-        -libopencv_core.4.5.2 \
-        -libopencv_dnn.4.5.2 \
-        -libopencv_features2d.4.5.2 \
-        -libopencv_flann.4.5.2 \
-        -libopencv_gapi.4.5.2 \
-        -libopencv_highgui.4.5.2 \
-        -libopencv_imgcodecs.4.5.2 \
-        -libopencv_imgproc.4.5.2 \
-        -libopencv_ml.4.5.2 \
-        -libopencv_objdetect.4.5.2 \
-        -libopencv_photo.4.5.2 \
-        -libopencv_stitching.4.5.2 \
-        -libopencv_videoio.4.5.2 \
-        -libopencv_video.4.5.2
+                     ../3rdparty/opencv-4.5.2/modules/imgproc/include/
+
+
+macx: LIBS += -L$$PWD/../3rdparty/build_opencv-4.5.2/lib/ \
+        -lopencv_calib3d.4.5.2 \
+        -lopencv_core.4.5.2 \
+        -lopencv_dnn.4.5.2 \
+        -lopencv_features2d.4.5.2 \
+        -lopencv_flann.4.5.2 \
+        -lopencv_gapi.4.5.2 \
+        -lopencv_highgui.4.5.2 \
+        -lopencv_imgcodecs.4.5.2 \
+        -lopencv_imgproc.4.5.2 \
+        -lopencv_ml.4.5.2 \
+        -lopencv_objdetect.4.5.2 \
+        -lopencv_photo.4.5.2 \
+        -lopencv_stitching.4.5.2 \
+        -lopencv_videoio.4.5.2 \
+        -lopencv_video.4.5.2
+
+unix:!macx: INCLUDEPATH += /usr/local/include/opencv4
+unix:!macx: LIBS += -L/usr/local/lib \
+        -lopencv_calib3d \
+        -lopencv_core \
+        -lopencv_dnn \
+        -lopencv_features2d \
+        -lopencv_flann \
+        -lopencv_gapi \
+        -lopencv_highgui \
+        -lopencv_imgcodecs \
+        -lopencv_imgproc \
+        -lopencv_ml \
+        -lopencv_objdetect \
+        -lopencv_photo \
+        -lopencv_stitching \
+        -lopencv_videoio \
+        -lopencv_video
 
 # windows: INCLUDEPATH += c:\opencv-4.5.1\build\install\include
 windows: INCLUDEPATH += c:\opencv-4.5.1\build_64\install\include
