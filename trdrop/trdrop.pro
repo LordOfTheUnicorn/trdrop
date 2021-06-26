@@ -90,8 +90,11 @@ windows: LIBS += -Lc:\opencv-4.5.1\build_64\install\x64\mingw\lib \
 
 
 # openmp support to allow parallelism
-#LIBS += -fopenmp
-#QMAKE_CXXFLAGS += -fopenmp
+unix:!macx: LIBS += -fopenmp
+unix:!macx: QMAKE_CXXFLAGS += -fopenmp
+
+macx: QMAKE_CXXFLAGS += -Xclang -fopenmp
+macx: LIBS += -L$$PWD/../3rdparty/openmp/lib/ -lomp
 
 
 SOURCES += \
