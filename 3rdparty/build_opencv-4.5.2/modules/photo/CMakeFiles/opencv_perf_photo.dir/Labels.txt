@@ -1,0 +1,25 @@
+# Target labels
+ Main
+ opencv_photo
+ PerfTest
+# Source files and their labels
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/modules/photo/perf/opencl/perf_denoising.cpp
+ Main
+ opencv_photo
+ PerfTest
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/modules/photo/perf/perf_cuda.cpp
+ Main
+ opencv_photo
+ PerfTest
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/modules/photo/perf/perf_inpaint.cpp
+ Main
+ opencv_photo
+ PerfTest
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/modules/photo/perf/perf_main.cpp
+ Main
+ opencv_photo
+ PerfTest
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/modules/photo/perf/perf_precomp.hpp
+ Main
+ opencv_photo
+ PerfTest

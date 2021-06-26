@@ -1,0 +1,13 @@
+# Target labels
+ Main
+ opencv_imgcodecs
+ PerfTest
+# Source files and their labels
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/modules/imgcodecs/perf/perf_main.cpp
+ Main
+ opencv_imgcodecs
+ PerfTest
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/modules/imgcodecs/perf/perf_precomp.hpp
+ Main
+ opencv_imgcodecs
+ PerfTest

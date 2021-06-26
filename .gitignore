@@ -46,7 +46,3 @@ local-images
 .dvi
 .bbl
 .blg
-
-# C++ build
-
-build*

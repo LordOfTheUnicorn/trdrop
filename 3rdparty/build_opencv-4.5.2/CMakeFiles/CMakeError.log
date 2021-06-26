@@ -1,0 +1,886 @@
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compilation failed:
+    source file: '/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_popcnt.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e82f1/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e82f1.dir/build.make CMakeFiles/cmTC_e82f1.dir/build
+Building CXX object CMakeFiles/cmTC_e82f1.dir/cpu_popcnt.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -std=c++11 -MD -MT CMakeFiles/cmTC_e82f1.dir/cpu_popcnt.cpp.o -MF CMakeFiles/cmTC_e82f1.dir/cpu_popcnt.cpp.o.d -o CMakeFiles/cmTC_e82f1.dir/cpu_popcnt.cpp.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_popcnt.cpp
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_popcnt.cpp:14:4: error: "__POPCNT__ is not defined by compiler"
+#  error "__POPCNT__ is not defined by compiler"
+   ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_popcnt.cpp:22:13: error: use of undeclared identifier 'CV_POPCNT_U32'
+    int j = CV_POPCNT_U32(1);
+            ^
+2 errors generated.
+make[1]: *** [CMakeFiles/cmTC_e82f1.dir/cpu_popcnt.cpp.o] Error 1
+make: *** [cmTC_e82f1/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_sse42.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e8a19/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e8a19.dir/build.make CMakeFiles/cmTC_e8a19.dir/build
+Building CXX object CMakeFiles/cmTC_e8a19.dir/cpu_sse42.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -std=c++11 -MD -MT CMakeFiles/cmTC_e8a19.dir/cpu_sse42.cpp.o -MF CMakeFiles/cmTC_e8a19.dir/cpu_sse42.cpp.o.d -o CMakeFiles/cmTC_e8a19.dir/cpu_sse42.cpp.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_sse42.cpp
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_sse42.cpp:5:24: error: always_inline function '_mm_crc32_u8' requires target feature 'sse4.2', but would be inlined into function 'main' that is compiled without support for 'sse4.2'
+    unsigned int res = _mm_crc32_u8(1, 2);
+                       ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_e8a19.dir/cpu_sse42.cpp.o] Error 1
+make: *** [cmTC_e8a19/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_fp16.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f9d9f/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f9d9f.dir/build.make CMakeFiles/cmTC_f9d9f.dir/build
+Building CXX object CMakeFiles/cmTC_f9d9f.dir/cpu_fp16.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -std=c++11 -MD -MT CMakeFiles/cmTC_f9d9f.dir/cpu_fp16.cpp.o -MF CMakeFiles/cmTC_f9d9f.dir/cpu_fp16.cpp.o.d -o CMakeFiles/cmTC_f9d9f.dir/cpu_fp16.cpp.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_fp16.cpp
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_fp16.cpp:26:2: error: "FP16 is not supported"
+#error "FP16 is not supported"
+ ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_fp16.cpp:31:18: error: use of undeclared identifier 'test'
+  printf("%d\n", test());
+                 ^
+2 errors generated.
+make[1]: *** [CMakeFiles/cmTC_f9d9f.dir/cpu_fp16.cpp.o] Error 1
+make: *** [cmTC_f9d9f/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a7002/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a7002.dir/build.make CMakeFiles/cmTC_a7002.dir/build
+Building CXX object CMakeFiles/cmTC_a7002.dir/cpu_avx.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -std=c++11 -MD -MT CMakeFiles/cmTC_a7002.dir/cpu_avx.cpp.o -MF CMakeFiles/cmTC_a7002.dir/cpu_avx.cpp.o.d -o CMakeFiles/cmTC_a7002.dir/cpu_avx.cpp.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx.cpp
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx.cpp:2:2: error: "__AVX__ define is missing"
+#error "__AVX__ define is missing"
+ ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_a7002.dir/cpu_avx.cpp.o] Error 1
+make: *** [cmTC_a7002/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx2.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_81b51/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_81b51.dir/build.make CMakeFiles/cmTC_81b51.dir/build
+Building CXX object CMakeFiles/cmTC_81b51.dir/cpu_avx2.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -std=c++11 -MD -MT CMakeFiles/cmTC_81b51.dir/cpu_avx2.cpp.o -MF CMakeFiles/cmTC_81b51.dir/cpu_avx2.cpp.o.d -o CMakeFiles/cmTC_81b51.dir/cpu_avx2.cpp.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx2.cpp
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx2.cpp:2:2: error: "__AVX2__ define is missing"
+#error "__AVX2__ define is missing"
+ ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_81b51.dir/cpu_avx2.cpp.o] Error 1
+make: *** [cmTC_81b51/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a0f3c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a0f3c.dir/build.make CMakeFiles/cmTC_a0f3c.dir/build
+Building CXX object CMakeFiles/cmTC_a0f3c.dir/cpu_avx512.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -std=c++11 -MD -MT CMakeFiles/cmTC_a0f3c.dir/cpu_avx512.cpp.o -MF CMakeFiles/cmTC_a0f3c.dir/cpu_avx512.cpp.o.d -o CMakeFiles/cmTC_a0f3c.dir/cpu_avx512.cpp.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512.cpp
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512.cpp:11:2: error: "AVX512 is not supported"
+#error "AVX512 is not supported"
+ ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_a0f3c.dir/cpu_avx512.cpp.o] Error 1
+make: *** [cmTC_a0f3c/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512common.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3a2d3/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_3a2d3.dir/build.make CMakeFiles/cmTC_3a2d3.dir/build
+Building CXX object CMakeFiles/cmTC_3a2d3.dir/cpu_avx512common.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -std=c++11 -MD -MT CMakeFiles/cmTC_3a2d3.dir/cpu_avx512common.cpp.o -MF CMakeFiles/cmTC_3a2d3.dir/cpu_avx512common.cpp.o.d -o CMakeFiles/cmTC_3a2d3.dir/cpu_avx512common.cpp.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512common.cpp
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512common.cpp:12:2: error: "AVX512-COMMON is not supported"
+#error "AVX512-COMMON is not supported"
+ ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_3a2d3.dir/cpu_avx512common.cpp.o] Error 1
+make: *** [cmTC_3a2d3/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512knl.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4eb4c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_4eb4c.dir/build.make CMakeFiles/cmTC_4eb4c.dir/build
+Building CXX object CMakeFiles/cmTC_4eb4c.dir/cpu_avx512knl.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -std=c++11 -MD -MT CMakeFiles/cmTC_4eb4c.dir/cpu_avx512knl.cpp.o -MF CMakeFiles/cmTC_4eb4c.dir/cpu_avx512knl.cpp.o.d -o CMakeFiles/cmTC_4eb4c.dir/cpu_avx512knl.cpp.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512knl.cpp
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512knl.cpp:14:2: error: "AVX512-KNL is not supported"
+#error "AVX512-KNL is not supported"
+ ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_4eb4c.dir/cpu_avx512knl.cpp.o] Error 1
+make: *** [cmTC_4eb4c/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512knm.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f4697/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f4697.dir/build.make CMakeFiles/cmTC_f4697.dir/build
+Building CXX object CMakeFiles/cmTC_f4697.dir/cpu_avx512knm.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -std=c++11 -MD -MT CMakeFiles/cmTC_f4697.dir/cpu_avx512knm.cpp.o -MF CMakeFiles/cmTC_f4697.dir/cpu_avx512knm.cpp.o.d -o CMakeFiles/cmTC_f4697.dir/cpu_avx512knm.cpp.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512knm.cpp
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512knm.cpp:15:2: error: "AVX512-KNM is not supported"
+#error "AVX512-KNM is not supported"
+ ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_f4697.dir/cpu_avx512knm.cpp.o] Error 1
+make: *** [cmTC_f4697/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512knm.cpp'
+    check option: ' -mavx512f -mavx512cd -mavx512er -mavx512pf -mavx5124fmaps -mavx5124vnniw -mavx512vpopcntdq'
+===== BUILD LOG =====
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_15a50/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_15a50.dir/build.make CMakeFiles/cmTC_15a50.dir/build
+Building CXX object CMakeFiles/cmTC_15a50.dir/cpu_avx512knm.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE    -mavx512f -mavx512cd -mavx512er -mavx512pf -mavx5124fmaps -mavx5124vnniw -mavx512vpopcntdq -std=c++11 -MD -MT CMakeFiles/cmTC_15a50.dir/cpu_avx512knm.cpp.o -MF CMakeFiles/cmTC_15a50.dir/cpu_avx512knm.cpp.o.d -o CMakeFiles/cmTC_15a50.dir/cpu_avx512knm.cpp.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512knm.cpp
+clang: error: unknown argument: '-mavx5124fmaps'
+clang: error: unknown argument: '-mavx5124vnniw'
+make[1]: *** [CMakeFiles/cmTC_15a50.dir/cpu_avx512knm.cpp.o] Error 1
+make: *** [cmTC_15a50/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512skx.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_39e46/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_39e46.dir/build.make CMakeFiles/cmTC_39e46.dir/build
+Building CXX object CMakeFiles/cmTC_39e46.dir/cpu_avx512skx.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -std=c++11 -MD -MT CMakeFiles/cmTC_39e46.dir/cpu_avx512skx.cpp.o -MF CMakeFiles/cmTC_39e46.dir/cpu_avx512skx.cpp.o.d -o CMakeFiles/cmTC_39e46.dir/cpu_avx512skx.cpp.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512skx.cpp
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512skx.cpp:30:2: error: "AVX512-SKX is not supported"
+#error "AVX512-SKX is not supported"
+ ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_39e46.dir/cpu_avx512skx.cpp.o] Error 1
+make: *** [cmTC_39e46/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512cnl.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_bcb44/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_bcb44.dir/build.make CMakeFiles/cmTC_bcb44.dir/build
+Building CXX object CMakeFiles/cmTC_bcb44.dir/cpu_avx512cnl.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -std=c++11 -MD -MT CMakeFiles/cmTC_bcb44.dir/cpu_avx512cnl.cpp.o -MF CMakeFiles/cmTC_bcb44.dir/cpu_avx512cnl.cpp.o.d -o CMakeFiles/cmTC_bcb44.dir/cpu_avx512cnl.cpp.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512cnl.cpp
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512cnl.cpp:10:2: error: "AVX512-CNL is not supported"
+#error "AVX512-CNL is not supported"
+ ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_bcb44.dir/cpu_avx512cnl.cpp.o] Error 1
+make: *** [cmTC_bcb44/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512clx.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4d94b/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_4d94b.dir/build.make CMakeFiles/cmTC_4d94b.dir/build
+Building CXX object CMakeFiles/cmTC_4d94b.dir/cpu_avx512clx.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -std=c++11 -MD -MT CMakeFiles/cmTC_4d94b.dir/cpu_avx512clx.cpp.o -MF CMakeFiles/cmTC_4d94b.dir/cpu_avx512clx.cpp.o.d -o CMakeFiles/cmTC_4d94b.dir/cpu_avx512clx.cpp.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512clx.cpp
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512clx.cpp:9:2: error: "AVX512-CLX is not supported"
+#error "AVX512-CLX is not supported"
+ ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_4d94b.dir/cpu_avx512clx.cpp.o] Error 1
+make: *** [cmTC_4d94b/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512icl.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_95611/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_95611.dir/build.make CMakeFiles/cmTC_95611.dir/build
+Building CXX object CMakeFiles/cmTC_95611.dir/cpu_avx512icl.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -std=c++11 -MD -MT CMakeFiles/cmTC_95611.dir/cpu_avx512icl.cpp.o -MF CMakeFiles/cmTC_95611.dir/cpu_avx512icl.cpp.o.d -o CMakeFiles/cmTC_95611.dir/cpu_avx512icl.cpp.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512icl.cpp
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/opencv-4.5.2/cmake/checks/cpu_avx512icl.cpp:12:2: error: "AVX512-ICL is not supported"
+#error "AVX512-ICL is not supported"
+ ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_95611.dir/cpu_avx512icl.cpp.o] Error 1
+make: *** [cmTC_95611/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_370ea/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_370ea.dir/build.make CMakeFiles/cmTC_370ea.dir/build
+Building CXX object CMakeFiles/cmTC_370ea.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -std=c++11 -MD -MT CMakeFiles/cmTC_370ea.dir/src.cxx.o -MF CMakeFiles/cmTC_370ea.dir/src.cxx.o.d -o CMakeFiles/cmTC_370ea.dir/src.cxx.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_370ea
+/usr/local/Cellar/cmake/3.20.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_370ea.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -Wl,--as-needed  CMakeFiles/cmTC_370ea.dir/src.cxx.o -o cmTC_370ea 
+ld: unknown option: --as-needed
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_370ea] Error 1
+make: *** [cmTC_370ea/fast] Error 2
+
+
+===== END =====
+
+Determining if the include file malloc.h exists failed with the following output:
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_741fa/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_741fa.dir/build.make CMakeFiles/cmTC_741fa.dir/build
+Building C object CMakeFiles/cmTC_741fa.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG  -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -MD -MT CMakeFiles/cmTC_741fa.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_741fa.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_741fa.dir/CheckIncludeFile.c.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'malloc.h' file not found
+#include <malloc.h>
+         ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_741fa.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_741fa/fast] Error 2
+
+
+
+Determining size of off64_t failed with the following output:
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f7a94/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f7a94.dir/build.make CMakeFiles/cmTC_f7a94.dir/build
+Building C object CMakeFiles/cmTC_f7a94.dir/OFF64_T.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG  -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -MD -MT CMakeFiles/cmTC_f7a94.dir/OFF64_T.c.o -MF CMakeFiles/cmTC_f7a94.dir/OFF64_T.c.o.d -o CMakeFiles/cmTC_f7a94.dir/OFF64_T.c.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/OFF64_T.c
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/OFF64_T.c:29:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/OFF64_T.c:30:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/OFF64_T.c:31:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/OFF64_T.c:32:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/OFF64_T.c:33:12: error: use of undeclared identifier 'off64_t'
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTC_f7a94.dir/OFF64_T.c.o] Error 1
+make: *** [cmTC_f7a94/fast] Error 2
+
+
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/OFF64_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(off64_t))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the include file io.h exists failed with the following output:
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d6ae5/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d6ae5.dir/build.make CMakeFiles/cmTC_d6ae5.dir/build
+Building C object CMakeFiles/cmTC_d6ae5.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG  -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -MD -MT CMakeFiles/cmTC_d6ae5.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_d6ae5.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_d6ae5.dir/CheckIncludeFile.c.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'io.h' file not found
+#include <io.h>
+         ^~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_d6ae5.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_d6ae5/fast] Error 2
+
+
+
+Determining size of INT8 failed with the following output:
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_94258/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_94258.dir/build.make CMakeFiles/cmTC_94258.dir/build
+Building C object CMakeFiles/cmTC_94258.dir/int8.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG  -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -MD -MT CMakeFiles/cmTC_94258.dir/int8.c.o -MF CMakeFiles/cmTC_94258.dir/int8.c.o.d -o CMakeFiles/cmTC_94258.dir/int8.c.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int8.c
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int8.c:29:12: error: use of undeclared identifier 'INT8'
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int8.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(INT8))
+                     ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int8.c:30:12: error: use of undeclared identifier 'INT8'
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int8.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(INT8))
+                     ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int8.c:31:12: error: use of undeclared identifier 'INT8'
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int8.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(INT8))
+                     ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int8.c:32:12: error: use of undeclared identifier 'INT8'
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int8.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(INT8))
+                     ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int8.c:33:12: error: use of undeclared identifier 'INT8'
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int8.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(INT8))
+                     ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTC_94258.dir/int8.c.o] Error 1
+make: *** [cmTC_94258/fast] Error 2
+
+
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int8.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(INT8))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of INT16 failed with the following output:
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cba6f/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_cba6f.dir/build.make CMakeFiles/cmTC_cba6f.dir/build
+Building C object CMakeFiles/cmTC_cba6f.dir/int16.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG  -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -MD -MT CMakeFiles/cmTC_cba6f.dir/int16.c.o -MF CMakeFiles/cmTC_cba6f.dir/int16.c.o.d -o CMakeFiles/cmTC_cba6f.dir/int16.c.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int16.c
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int16.c:29:12: error: use of undeclared identifier 'INT16'
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int16.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(INT16))
+                     ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int16.c:30:12: error: use of undeclared identifier 'INT16'
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int16.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(INT16))
+                     ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int16.c:31:12: error: use of undeclared identifier 'INT16'
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int16.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(INT16))
+                     ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int16.c:32:12: error: use of undeclared identifier 'INT16'
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int16.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(INT16))
+                     ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int16.c:33:12: error: use of undeclared identifier 'INT16'
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int16.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(INT16))
+                     ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTC_cba6f.dir/int16.c.o] Error 1
+make: *** [cmTC_cba6f/fast] Error 2
+
+
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int16.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(INT16))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of INT32 failed with the following output:
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_88304/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_88304.dir/build.make CMakeFiles/cmTC_88304.dir/build
+Building C object CMakeFiles/cmTC_88304.dir/int32.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG  -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -MD -MT CMakeFiles/cmTC_88304.dir/int32.c.o -MF CMakeFiles/cmTC_88304.dir/int32.c.o.d -o CMakeFiles/cmTC_88304.dir/int32.c.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int32.c
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int32.c:29:12: error: use of undeclared identifier 'INT32'
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int32.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(INT32))
+                     ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int32.c:30:12: error: use of undeclared identifier 'INT32'
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int32.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(INT32))
+                     ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int32.c:31:12: error: use of undeclared identifier 'INT32'
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int32.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(INT32))
+                     ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int32.c:32:12: error: use of undeclared identifier 'INT32'
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int32.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(INT32))
+                     ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int32.c:33:12: error: use of undeclared identifier 'INT32'
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int32.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(INT32))
+                     ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTC_88304.dir/int32.c.o] Error 1
+make: *** [cmTC_88304/fast] Error 2
+
+
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckTypeSize/int32.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(INT32))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Build output check failed:
+    Regex: 'unknown .*option'
+    Output line: 'warning: unknown warning option '-Wno-unused-but-set-variable', did you mean '-Wno-unused-const-variable'? [-Wunknown-warning-option]'
+Compilation failed:
+    source file: '/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-unused-but-set-variable'
+===== BUILD LOG =====
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_dfb5b/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_dfb5b.dir/build.make CMakeFiles/cmTC_dfb5b.dir/build
+Building C object CMakeFiles/cmTC_dfb5b.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG  -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE    -Wno-unused-but-set-variable -MD -MT CMakeFiles/cmTC_dfb5b.dir/src.c.o -MF CMakeFiles/cmTC_dfb5b.dir/src.c.o.d -o CMakeFiles/cmTC_dfb5b.dir/src.c.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp/src.c
+warning: unknown warning option '-Wno-unused-but-set-variable'; did you mean '-Wno-unused-const-variable'? [-Wunknown-warning-option]
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp/src.c:1:8: warning: unknown pragma ignored [-Wunknown-pragmas]
+#pragma
+       ^
+2 warnings generated.
+Linking C executable cmTC_dfb5b
+/usr/local/Cellar/cmake/3.20.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dfb5b.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG  -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   -Wl,-dead_strip  CMakeFiles/cmTC_dfb5b.dir/src.c.o -o cmTC_dfb5b 
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unknown .*option'
+    Output line: 'warning: unknown warning option '-Wno-maybe-uninitialized', did you mean '-Wno-uninitialized'? [-Wunknown-warning-option]'
+Compilation failed:
+    source file: '/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-maybe-uninitialized'
+===== BUILD LOG =====
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d256c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d256c.dir/build.make CMakeFiles/cmTC_d256c.dir/build
+Building C object CMakeFiles/cmTC_d256c.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wstrict-prototypes -Winit-self -Wpointer-arith -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-missing-prototypes -Wno-missing-declarations -Wno-undef -Wno-unused -Wno-sign-compare -Wno-cast-align -Wno-shadow  -O3 -DNDEBUG  -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE    -Wno-maybe-uninitialized -MD -MT CMakeFiles/cmTC_d256c.dir/src.c.o -MF CMakeFiles/cmTC_d256c.dir/src.c.o.d -o CMakeFiles/cmTC_d256c.dir/src.c.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp/src.c
+warning: unknown warning option '-Wno-maybe-uninitialized'; did you mean '-Wno-uninitialized'? [-Wunknown-warning-option]
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp/src.c:1:8: warning: unknown pragma ignored [-Wunknown-pragmas]
+#pragma
+       ^
+2 warnings generated.
+Linking C executable cmTC_d256c
+/usr/local/Cellar/cmake/3.20.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d256c.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wstrict-prototypes -Winit-self -Wpointer-arith -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-missing-prototypes -Wno-missing-declarations -Wno-undef -Wno-unused -Wno-sign-compare -Wno-cast-align -Wno-shadow  -O3 -DNDEBUG  -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   -Wl,-dead_strip  CMakeFiles/cmTC_d256c.dir/src.c.o -o cmTC_d256c 
+
+
+===== END =====
+
+Determining if files malloc.h exist failed with the following output:
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ee45f/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ee45f.dir/build.make CMakeFiles/cmTC_ee45f.dir/build
+Building C object CMakeFiles/cmTC_ee45f.dir/OPJ_HAVE_MALLOC_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -O3 -DNDEBUG  -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -MD -MT CMakeFiles/cmTC_ee45f.dir/OPJ_HAVE_MALLOC_H.c.o -MF CMakeFiles/cmTC_ee45f.dir/OPJ_HAVE_MALLOC_H.c.o.d -o CMakeFiles/cmTC_ee45f.dir/OPJ_HAVE_MALLOC_H.c.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckIncludeFiles/OPJ_HAVE_MALLOC_H.c
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CheckIncludeFiles/OPJ_HAVE_MALLOC_H.c:2:10: fatal error: 'malloc.h' file not found
+#include <malloc.h>
+         ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_ee45f.dir/OPJ_HAVE_MALLOC_H.c.o] Error 1
+make: *** [cmTC_ee45f/fast] Error 2
+
+
+Source:
+/* */
+#include <malloc.h>
+
+
+int main(void){return 0;}
+
+Determining if the _aligned_malloc exist failed with the following output:
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_258d4/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_258d4.dir/build.make CMakeFiles/cmTC_258d4.dir/build
+Building C object CMakeFiles/cmTC_258d4.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -O3 -DNDEBUG  -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -MD -MT CMakeFiles/cmTC_258d4.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_258d4.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_258d4.dir/CheckSymbolExists.c.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'malloc.h' file not found
+#include <malloc.h>
+         ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_258d4.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_258d4/fast] Error 2
+
+
+File /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _aligned_malloc
+  return ((int*)(&_aligned_malloc))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the memalign exist failed with the following output:
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3f593/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_3f593.dir/build.make CMakeFiles/cmTC_3f593.dir/build
+Building C object CMakeFiles/cmTC_3f593.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -O3 -DNDEBUG  -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -MD -MT CMakeFiles/cmTC_3f593.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_3f593.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_3f593.dir/CheckSymbolExists.c.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'malloc.h' file not found
+#include <malloc.h>
+         ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_3f593.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_3f593/fast] Error 2
+
+
+File /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef memalign
+  return ((int*)(&memalign))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Build output check failed:
+    Regex: 'unknown .*option'
+    Output line: 'warning: unknown warning option '-Wno-cast-function-type', did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]'
+Compilation failed:
+    source file: '/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-cast-function-type'
+===== BUILD LOG =====
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c5838/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_c5838.dir/build.make CMakeFiles/cmTC_c5838.dir/build
+Building C object CMakeFiles/cmTC_c5838.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion -Wno-undef -Wno-strict-prototypes  -O3 -DNDEBUG  -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE    -Wno-cast-function-type -MD -MT CMakeFiles/cmTC_c5838.dir/src.c.o -MF CMakeFiles/cmTC_c5838.dir/src.c.o.d -o CMakeFiles/cmTC_c5838.dir/src.c.o -c /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp/src.c
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+/Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp/src.c:1:8: warning: unknown pragma ignored [-Wunknown-pragmas]
+#pragma
+       ^
+2 warnings generated.
+Linking C executable cmTC_c5838
+/usr/local/Cellar/cmake/3.20.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5838.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion -Wno-undef -Wno-strict-prototypes  -O3 -DNDEBUG  -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   -Wl,-dead_strip  CMakeFiles/cmTC_c5838.dir/src.c.o -o cmTC_c5838 
+
+
+===== END =====
+
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /Users/unicorn1343/Documents/GitHub/trdrop/3rdParty/build_opencv-4.5.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6c68c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_6c68c.dir/build.make CMakeFiles/cmTC_6c68c.dir/build
+Building C object CMakeFiles/cmTC_6c68c.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -DCHECK_FUNCTION_EXISTS=sgemm_ -O3 -DNDEBUG  -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -fPIE -MD -MT CMakeFiles/cmTC_6c68c.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_6c68c.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_6c68c.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6c68c
+/usr/local/Cellar/cmake/3.20.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c68c.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -DCHECK_FUNCTION_EXISTS=sgemm_ -O3 -DNDEBUG  -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   -Wl,-dead_strip  CMakeFiles/cmTC_6c68c.dir/CheckFunctionExists.c.o -o cmTC_6c68c 
+Undefined symbols for architecture x86_64:
+  "_sgemm_", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_6c68c] Error 1
+make: *** [cmTC_6c68c/fast] Error 2
+
+
+
