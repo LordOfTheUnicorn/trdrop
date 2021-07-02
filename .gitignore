@@ -46,3 +46,6 @@ local-images
 .dvi
 .bbl
 .blg
+
+# MacOS
+.DS_Store
