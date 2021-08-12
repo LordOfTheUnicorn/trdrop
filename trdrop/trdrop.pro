@@ -13,45 +13,9 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 # OpenC
-macx: INCLUDEPATH += ../3rdparty/opencv-4.5.2/include/ \
-                     ../3rdparty/build_opencv-4.5.2/ \
-                     ../3rdparty/opencv-4.5.2/modules/core/include/ \
-                     ../3rdparty/opencv-4.5.2/modules/features2d/include/ \
-                     ../3rdparty/opencv-4.5.2/modules/dnn/include/ \
-                     ../3rdparty/opencv-4.5.2/modules/objdetect/include/ \
-                     ../3rdparty/opencv-4.5.2/modules/flann/include/ \
-                     ../3rdparty/opencv-4.5.2/modules/calib3d/include/ \
-                     ../3rdparty/opencv-4.5.2/modules/gapi/include/ \
-                     ../3rdparty/opencv-4.5.2/modules/highgui/include/ \
-                     ../3rdparty/opencv-4.5.2/modules/imgcodecs/include/ \
-                     ../3rdparty/opencv-4.5.2/modules/ml/include/ \
-                     ../3rdparty/opencv-4.5.2/modules/stitching/include/ \
-                     ../3rdparty/opencv-4.5.2/modules/video/include/ \
-                     ../3rdparty/opencv-4.5.2/modules/photo/include/ \
-                     ../3rdparty/opencv-4.5.2/modules/videoio/include/ \
-                     ../3rdparty/opencv-4.5.2/modules/world/include/ \
-                     ../3rdparty/opencv-4.5.2/modules/imgproc/include/
 
-
-macx: LIBS += -L$$PWD/../3rdparty/build_opencv-4.5.2/lib/ \
-        -lopencv_calib3d.4.5.2 \
-        -lopencv_core.4.5.2 \
-        -lopencv_dnn.4.5.2 \
-        -lopencv_features2d.4.5.2 \
-        -lopencv_flann.4.5.2 \
-        -lopencv_gapi.4.5.2 \
-        -lopencv_highgui.4.5.2 \
-        -lopencv_imgcodecs.4.5.2 \
-        -lopencv_imgproc.4.5.2 \
-        -lopencv_ml.4.5.2 \
-        -lopencv_objdetect.4.5.2 \
-        -lopencv_photo.4.5.2 \
-        -lopencv_stitching.4.5.2 \
-        -lopencv_videoio.4.5.2 \
-        -lopencv_video.4.5.2
-
-unix:!macx: INCLUDEPATH += /usr/local/include/opencv4
-unix:!macx: LIBS += -L/usr/local/lib \
+unix: INCLUDEPATH += /usr/local/include/opencv4
+unix: LIBS += -L/usr/local/lib \
         -lopencv_calib3d \
         -lopencv_core \
         -lopencv_dnn \
@@ -90,8 +54,8 @@ windows: LIBS += -Lc:\opencv-4.5.1\build_64\install\x64\mingw\lib \
 
 
 # openmp support to allow parallelism
-unix:!macx: LIBS += -fopenmp
-unix:!macx: QMAKE_CXXFLAGS += -fopenmp
+#unix: LIBS += -fopenmp
+#unix: QMAKE_CXXFLAGS += -fopenmp
 
 macx: QMAKE_CXXFLAGS += -Xclang -fopenmp
 macx: LIBS += -L$$PWD/../3rdparty/openmp/lib/ -lomp
@@ -147,4 +111,5 @@ HEADERS += \
     headers/qml_models/framerateoptionsmodel.h
 
 
-RC_ICONS = images/trdrop_logo_alpha_wide_contour.ico
+ RC_ICONS = images/trdrop_logo_alpha_wide_contour.ico
+ macx: ICON = images/trdrop_logo_alpha_wide_contour.icns

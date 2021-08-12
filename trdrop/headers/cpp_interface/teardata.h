@@ -78,7 +78,7 @@ private:
         else if (resolution == QSize(1280, 720))  max_size = 6 + 1;
         else if (resolution == QSize(1600, 900))  max_size = 6 + 2;
         else if (resolution == QSize(1920, 1080)) max_size = 6 + 3;
-        else if (resolution == QSize(2048, 1152)) max_size = 6 + 3;
+        else if (resolution == QSize(2048, 1152) || resolution == QSize(2532, 1170) || resolution == QSize(2778, 1284)) max_size = 6 + 3;
         else if (resolution == QSize(2560, 1440)) max_size = 6 + 4;
         else if (resolution == QSize(3840, 2160)) max_size = 6 + 6;
         else qDebug() << "TearData::_get_pen_width() - there is no case for the current resolution(" << resolution << "), this should never happen";

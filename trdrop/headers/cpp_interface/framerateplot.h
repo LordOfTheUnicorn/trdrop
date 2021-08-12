@@ -410,7 +410,7 @@ private:
         else if (current_size == QSize(1280, 720))  return 18;
         else if (current_size == QSize(1600, 900))  return 22;
         else if (current_size == QSize(1920, 1080)) return 27;
-        else if (current_size == QSize(2048, 1152)) return 30;
+        else if (current_size == QSize(2048, 1152) || current_size == QSize(2532, 1170) || current_size == QSize(2778, 1284)) return 30;
         else if (current_size == QSize(2560, 1440)) return 37;
         else if (current_size == QSize(3840, 2160)) return 51;
         qDebug() << "FrameratePlot::_get_font_size() - there is no case for the current resolution(" << current_size << "), this should never happen";
@@ -424,7 +424,7 @@ private:
         else if (current_size == QSize(1280, 720))  return 18 + 3;
         else if (current_size == QSize(1600, 900))  return 22 + 3;
         else if (current_size == QSize(1920, 1080)) return 27 + 3;
-        else if (current_size == QSize(2048, 1152)) return 30 + 3;
+        else if (current_size == QSize(2048, 1152) || current_size == QSize(2532, 1170) || current_size == QSize(2778, 1284)) return 30 + 3;
         else if (current_size == QSize(2560, 1440)) return 37 + 3;
         else if (current_size == QSize(3840, 2160)) return 51 + 12;
         qDebug() << "FrameratePlot::_get_eyecandy_font_size() - there is no case for the current resolution(" << current_size << "), this should never happen";
@@ -438,7 +438,7 @@ private:
         else if (current_size == QSize(1280, 720))  return 0.3;
         else if (current_size == QSize(1600, 900))  return 0.3;
         else if (current_size == QSize(1920, 1080)) return 0.3;
-        else if (current_size == QSize(2048, 1152)) return 0.3;
+        else if (current_size == QSize(2048, 1152) || current_size == QSize(2532, 1170) || current_size == QSize(2778, 1284)) return 0.3;
         else if (current_size == QSize(2560, 1440)) return 0.3;
         else if (current_size == QSize(3840, 2160)) return 0.3;
         qDebug() << "FrameratePlot::_get_font_spacing() - there is no case for the current resolution(" << current_size << "), this should never happen";
@@ -452,7 +452,7 @@ private:
         else if (current_size == QSize(1280, 720))  return 3;
         else if (current_size == QSize(1600, 900))  return 5;
         else if (current_size == QSize(1920, 1080)) return 5;
-        else if (current_size == QSize(2048, 1152)) return 7;
+        else if (current_size == QSize(2048, 1152) || current_size == QSize(2532, 1170) || current_size == QSize(2778, 1284)) return 7;
         else if (current_size == QSize(2560, 1440)) return 7;
         else if (current_size == QSize(3840, 2160)) return 10;
         qDebug() << "Plot::_get_outline_thickness() - there is no case for the current resolution(" << current_size << "), this should never happen";
@@ -466,7 +466,7 @@ private:
         else if (current_size == QSize(1280, 720))  return 1;
         else if (current_size == QSize(1600, 900))  return 2;
         else if (current_size == QSize(1920, 1080)) return 2;
-        else if (current_size == QSize(2048, 1152)) return 3;
+        else if (current_size == QSize(2048, 1152) || current_size == QSize(2532, 1170) || current_size == QSize(2778, 1284)) return 3;
         else if (current_size == QSize(2560, 1440)) return 3;
         else if (current_size == QSize(3840, 2160)) return 5;
         qDebug() << "FrameratePlot::_get_innerline_thickness() - there is no case for the current resolution(" << current_size << "), this should never happen";
@@ -480,7 +480,7 @@ private:
         else if (current_size == QSize(1280, 720))  return 3;
         else if (current_size == QSize(1600, 900))  return 4;
         else if (current_size == QSize(1920, 1080)) return 4;
-        else if (current_size == QSize(2048, 1152)) return 5;
+        else if (current_size == QSize(2048, 1152) || current_size == QSize(2532, 1170) || current_size == QSize(2778, 1284)) return 5;
         else if (current_size == QSize(2560, 1440)) return 5;
         else if (current_size == QSize(3840, 2160)) return 7;
         qDebug() << "Plot::_get_plotline_thickness() - there is no case for the current resolution(" << current_size << "), this should never happen";
@@ -502,7 +502,7 @@ private:
         else if (current_size == QSize(1280, 720))  return 3;
         else if (current_size == QSize(1600, 900))  return 4;
         else if (current_size == QSize(1920, 1080)) return 4;
-        else if (current_size == QSize(2048, 1152)) return 5;
+        else if (current_size == QSize(2048, 1152) || current_size == QSize(2532, 1170) || current_size == QSize(2778, 1284)) return 5;
         else if (current_size == QSize(2560, 1440)) return 5;
         else if (current_size == QSize(3840, 2160)) return 7;
         qDebug() << "FrameratePlot::_get_shadow_text_offset() - there is no case for the current resolution(" << current_size << "), this should never happen";

@@ -1,12 +1,14 @@
 import QtQuick 2.12
 
-Item {
+Item
+{
     id: startupBackground
     width: parent.width
     height: parent.height
 
     // content background
-    Rectangle {
+    Rectangle
+    {
         visible: true
         width: parent.width
         height: parent.height
@@ -14,7 +16,8 @@ Item {
     }
 
     // content text
-    Text {
+    Text
+    {
         text: "<b>Ctrl + F</b> to add files<br>
                <b>Ctrl + E</b> to export<br>
                <b>Ctrl + O</b> for Options"

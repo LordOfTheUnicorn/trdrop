@@ -14,9 +14,11 @@ MenuBar
         MenuItem
         {
             text: qsTr("Add files       Ctrl+F")
-            action: Action {
+            action: Action
+            {
                 shortcut: "Ctrl+F"
-                onTriggered: {
+                onTriggered:
+                {
                     var component = Qt.createComponent("FileWindow.qml");
                     var win = component.createObject(rootWindow);
                     win.show();
@@ -28,9 +30,11 @@ MenuBar
         {
             //shortcut:
             text: qsTr("Export          Ctrl+E")
-            action: Action {
+            action: Action
+            {
                 shortcut: "Ctrl+E"
-                onTriggered: {
+                onTriggered:
+                {
 //                    if (fileItemModel.filesSelectedCount() === 0)
 //                    {
 //                        console.log("can't export stuff if no video is picked, TODO modal")
