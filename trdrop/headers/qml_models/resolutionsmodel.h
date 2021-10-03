@@ -135,7 +135,9 @@ private:
         _resolutions_list.push_back(Resolution(QSize(1920, 1080), false));
         _resolutions_list.push_back(Resolution(QSize(2048, 1152), false));
         _resolutions_list.push_back(Resolution(QSize(2532, 1170), false));
-        _resolutions_list.push_back(Resolution(QSize(2778, 1284), false));
+        _resolutions_list.push_back(Resolution(QSize(2532, 1170), false));
+        _resolutions_list.push_back(Resolution(QSize(2266, 1488), false));
+        _resolutions_list.push_back(Resolution(QSize(2160, 1620), false));
         //_resolutions_list.push_back(Resolution(QSize(2560, 1440), false));
         _resolutions_list.push_back(Resolution(QSize(2560, 1440), false));
         _resolutions_list.push_back(Resolution(QSize(3840, 2160), false));

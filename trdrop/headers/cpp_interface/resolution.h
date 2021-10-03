@@ -25,7 +25,15 @@ public:
     //! getter
     bool enabled() const { return _enabled; }
     //! string convertion
-    QString name() const { return QString::number(_size.width()) + "x" + QString::number(_size.height()); }
+    QString name() const
+    {
+        if (_size.width() == 2266 && _size.height() == 1488)
+            return QString("iPad mini 6th gen");
+        else if (_size.width() == 2160 && _size.height() == 1620)
+            return QString("iPad 9th gen");
+        else
+            return QString::number(_size.width()) + "x" + QString::number(_size.height());
+    }
 // member
 private:
     //! current size
